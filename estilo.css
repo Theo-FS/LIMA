@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(0, 60, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 24px;
+    color: rgb(255, 200, 0);
+}
+
+
+
+#nome{
+    background-color: rgb(225, 132, 65);
+}
+
+#telefone{
+    background-color: aqua;
+
+}
+
+    button{
+        border-radius: 5px;
+        border: none;
+    }

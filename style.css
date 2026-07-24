@@ -1,3 +1,16 @@
-*{
-    background-color: aliceblue;
+
+.welcome {
+    font-family: 'Griffy', cursive;
 }
+* {
+    background-color: white;
+   
+}
+
+
+button, #botao {
+    font-family: Arial, sans-serif;
+}
+
+
+
