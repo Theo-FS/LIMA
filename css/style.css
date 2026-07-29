@@ -1,0 +1,51 @@
+* {
+    margin: 0; /*remove todos os elementos*/
+    padding: 0; /*remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /*Isso garante que o padding e a borda sejam incluidos aos cálculos do tamanho dos elementos*/
+
+
+
+
+
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex; /* utiliza modelo de leiaute flexbox para o corpo do documento*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+
+.card-conatiner{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+
+
+
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+
+
+}
+
