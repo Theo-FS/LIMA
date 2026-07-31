@@ -7,19 +7,32 @@ h1{
     font-size: 24px;
     color: rgb(255, 200, 0);
 }
-
-
-
-#nome{
-    background-color: rgb(225, 132, 65);
-}
-
-#telefone{
-    background-color: aqua;
-
-}
-
-    button{
+button{
         border-radius: 5px;
         border: none;
+    }
+
+.card{
+        background-color:white ;
+        width:300px ;
+        padding:20px;
+        border-radius:10px ;
+        box-shadow:0px 4px 15px rgba(0,0,0,0.1) ;
+        transition: ;
+ }
+
+.card:hover{
+        transform: translateY(-18px);
+        box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+  }
+
+.card h2{
+        color: #3333;
+        margin-bottom: 10px;
+    }
+
+.card p{
+        color: #666;
+        font-size: 15px;
+        margin-bottom: ;
     }

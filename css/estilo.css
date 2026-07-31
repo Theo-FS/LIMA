@@ -1,56 +1,64 @@
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #f4f4f4;
-    color: #2c3c50;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
     padding: 20px;
-    font-size: 32px;
 }
  
-h1 {
-    text-align: center;
-    font-size: 28px;
-    color: orange;
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
  
-p {
-    line-height: 1.5;
-    margin: 10px 0;
-    font-size: 1rem;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
 }
  
-.lorem {
-    color: orange;
+.card h2 {
+    color: #333;
+    margin-bottom: 10px;
 }
  
-p.lorem {
-    text-align: justify;
+.card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
  
-#ultimoparagrafo {
-    text-align: right;
-}
- 
-.conteudo {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
- 
-/* Botão */
-#botao:hover {
+.btn {
+    background-color: #007bff;
     color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
     background-color: blue;
-}
- 
-/* Imagem */
-#imagem {
-    width: 600px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
- 
-#imagem:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
+
 }
  
