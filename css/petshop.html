@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETSHOP</title>
+    <link rel="stylesheet" href="petshopstyle.css">
+    <style>
+        :root{
+            --primary-color: #19591e;
+            --secundary-color: #1bb127;
+            --background-color: #f4f4f9;
+            --text-color: #333;
+        }
+
+        [data-theme="dark"]{
+            --primary-color: #48a74d;
+            --secundary-color: #a3ff61;
+            --background-color: #222;
+            --text-color: #f4f4f9;
+        }
+
+        body{
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a{
+            color: var(--primary-color);
+        }
+
+        a:hover{
+            color: var(--secundary-color);
+        }
+
+        .btn{
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--secundary-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">pet shop maneiro</h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">inicio</a></li>
+                    <li><a href="#about">sobre nós</a></li>
+                    <li><a href="#contact">contato</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="abrir menu">&#9776;</button>
+            </nav>
+            <button id="theme-toggle" class="btn">Alternar Tema</button>
+        </div>
+    </header>
+    <main class="main-content container">
+        <aside class="sidebar">
+            <h2>sobre Petshop</h2>
+            <p>A Pet Shop maneiro oferece serviços de qualidade para cuidar do seu Dog.</p>
+            <img src="" alt="Banho e Tosa">
+            <ul class="sidebar-link">
+                <li><a href="#">clínica veterinária</a></li>
+                <li><a href="#">banho e tosa</a></li>
+                <li><a href="#">pet hotel</a></li>
+                <li><a href="#">produtos para pets</a></li>
+            </ul>
+        </aside>
+        <section class="cards">
+            <h2>nossos serviços</h2>
+            <div class="card">
+                <img src="" alt="clínica veterinária">
+                <h3>clínica veterinária</h3>
+                <p>Cuidado completo para saúde do seu pet.</p>
+                <button class="btn">saiba mais</button>
+            </div>
+            <div class="card">
+                <img src="" alt="pet hotel">
+                <h3>pet hotel</h3>
+                <p>conforto e segurança completa para seu pet.</p>
+                <button class="btn">saiba mais</button>
+            </div>
+
+             <div class="card">
+                <img src="" alt="banho e tosa">
+                <h3>banho e tosa</h3>
+                <p>banhos cuidadosos e premium para seu dog.</p>
+                <button class="btn">saiba mais</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; pet shop maneiro. todos os direitos reservados</p>
+            <P><strong>Endereço: </strong>Rua dos animais, 123, bairro pet - cidade dos bixos</P>
+            <p><strong>Telefone: </strong>(99) 99999-9999</p>
+            <p><strong>Horário de atendimento: </strong>segunda  a sexta: 8h - 18h | sábados: 9h - 14h</p>
+        </div>
+
+
+    </footer>
+
+    <script>
+        const themeToggle =  document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click", () => {
+            document.body.dataset.theme = document.body.dataset.theme === "dark" ? "" : "dark";
+        })
+    </script>
+</body>
+</html>
